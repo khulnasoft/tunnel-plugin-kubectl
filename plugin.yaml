@@ -1,0 +1,23 @@
+name: "kubectl"
+repository: github.com/khulnasoft/tunnel-plugin-kubectl
+version: "0.1.0"
+usage: scan kubectl resources
+description: |-
+  A Tunnel plugin that scans the images of a kubernetes resource.
+  Usage: tunnel kubectl TYPE[.VERSION][.GROUP] NAME
+platforms:
+  - selector: # optional
+      os: darwin
+      arch: amd64
+    uri: ./tunnel-kubectl # where the execution file is (local file, http, git, etc.)
+    bin: ./tunnel-kubectl # path to the execution file
+  - selector: # optional
+      os: linux
+      arch: amd64
+    uri: https://github.com/khulnasoft/tunnel-plugin-kubectl/releases/download/v0.1.0/tunnel-kubectl.tar.gz
+    bin: ./tunnel-kubectl
+  - selector:
+      os: darwin
+      arch: arm64
+    uri: ./tunnel-kubectl
+    bin: ./tunnel-kubectl
