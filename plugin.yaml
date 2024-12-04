@@ -1,7 +1,8 @@
 name: "kubectl"
-repository: github.com/khulnasoft/tunnel-plugin-kubectl
 version: "0.1.0"
-usage: scan kubectl resources
+repository: github.com/khulnasoft/tunnel-plugin-kubectl
+maintainer: khulnasoft
+summary: Scan kubectl resources
 description: |-
   A Tunnel plugin that scans the images of a kubernetes resource.
   Usage: tunnel kubectl TYPE[.VERSION][.GROUP] NAME
